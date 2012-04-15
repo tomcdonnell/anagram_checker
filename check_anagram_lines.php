@@ -7,7 +7,7 @@
 *
 * Project: Anagram Poem Checker.
 *
-* Purpose: Check that each line of a given text consists only of anagrams of a given string.
+* Purpose: Check that each line of a given in an anagrams of a given string.
 *
 * Author: Tom McDonnell 2010-11-16.
 *
