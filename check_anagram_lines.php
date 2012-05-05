@@ -15,7 +15,7 @@
 
 // Includes. ///////////////////////////////////////////////////////////////////////////////////////
 
-require_once dirname(__FILE__) . '/../library/tom/php/utils/Utils_html.php';
+require_once dirname(__FILE__) . '/lib_tom/php/utils/UtilsHtml.php';
 
 // Settings. ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -107,16 +107,14 @@ function checkAnagram($stringA, $stringB)
 
 function echoMessage($color, $string)
 {
-   echo "<span style='color: ", Utils_html::escapeSingleQuotes($color), "'>";
+   echo "<span style='color: ", UtilsHtml::escapeSingleQuotes($color), "'>";
    echo htmlentities($string);
    echo "</span><br/>\n";
 }
 
 // HTML code. //////////////////////////////////////////////////////////////////////////////////////
 ?>
-<!DOCTYPE html PUBLIC
- "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
  <head><title>Anagram Checker</title></head>
  <body>
@@ -187,7 +185,7 @@ else
    $message       = "$nImperfectLines incorrect lines were found.";;
 }
 ?>
-  <p style='<?php echo Utils_html::escapeSingleQuotes($stylesString); ?>'>
+  <p style='<?php echo UtilsHtml::escapeSingleQuotes($stylesString); ?>'>
 <?php
 echo '   ', htmlentities($message), "\n";
 ?>
