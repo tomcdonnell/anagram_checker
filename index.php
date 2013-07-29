@@ -99,7 +99,7 @@ catch (Exception $e)
  <head><title>Anagram Checker</title></head>
  <body>
   <a class='backLink' href='http://www.tomcdonnell.net'>Back to tomcdonnell.net</a> |
-  <a class='backLink' href='http://www.tomcdonnell.net/small_apps/anagram_finder'>Anagram Finder</a>
+  <a class='backLink' href='http://www.tomcdonnell.net/submodules/anagram_finder'>Anagram Finder</a>
   <h1>Anagram Checker</h1>
   <p>Use this tool to check that all lines of a given text are anagrams of a given phrase.</p>
   <hr/>
