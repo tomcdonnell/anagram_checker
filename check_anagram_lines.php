@@ -107,7 +107,7 @@ function checkAnagram($stringA, $stringB)
 
 function echoMessage($color, $string)
 {
-   echo "<span style='color: ", UtilsHtml::escapeSingleQuotes($color), "'>";
+   echo "<span style='color: ", UtilsHtml::escapeSingleQuotedAttribute($color), "'>";
    echo htmlentities($string);
    echo "</span><br/>\n";
 }
@@ -185,7 +185,7 @@ else
    $message       = "$nImperfectLines incorrect lines were found.";;
 }
 ?>
-  <p style='<?php echo UtilsHtml::escapeSingleQuotes($stylesString); ?>'>
+  <p style='<?php echo UtilsHtml::escapeSingleQuotedAttribute($stylesString); ?>'>
 <?php
 echo '   ', htmlentities($message), "\n";
 ?>
